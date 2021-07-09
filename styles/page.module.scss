@@ -1,20 +1,31 @@
 .main {
   transition: all ease-in-out 0.5s;
-  margin-left: 250px;
+  margin-left: 0;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1199px) {
   .main {
-    margin-left: 0;
+    margin-left: 250px;
   }
-}
-
-.main.open {
-  margin-left: 250px;
 }
 
 .open .sidebar {
   left: 0;
+}
+
+.sidebar__overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9995;
+}
+
+.open .sidebar__overlay {
+  display: block;
 }
 
 .hero {

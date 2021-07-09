@@ -11,8 +11,9 @@ export default function Home() {
 
     return (
         <main className={cx(styles.main, { [styles.open]: open })}>
-            <i className="bi bi-list mobile-sidebar-toggle" onClick={() => setOpen(!open)}></i>
+            <i className={cx('mobile-sidebar-toggle', 'bi', { ['bi-list']: !open }, { ['bi-x']: open })} onClick={() => setOpen(!open)}></i>
             <Sidebar className={styles.sidebar} />
+            <div className={styles.sidebar__overlay} onClick={() => setOpen(!open)}></div>
             <section id="home" className={styles.parallax}>
                 <div className={styles.overlay}></div>
                 <div className={styles.shadow__overlay}></div>
