@@ -1,8 +1,10 @@
+import { useState } from 'react';
+import Image from 'next/image';
+import cx from 'classnames';
+
 import Sidebar from '@components/Sidebar';
 import styles from '@styles/page.module.scss';
-import Image from 'next/image';
-import { useState } from 'react';
-import cx from 'classnames';
+import prefix from '@utils/prefix';
 
 export default function Home() {
     const [open, setOpen] = useState(false);
@@ -60,7 +62,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="col-12 col-md-4 order-0 text-center mb-4">
-                                    <Image src="/img/profile.jpg" width={250} height={250} quality={100} alt="about-photo" />
+                                    <Image src={`${prefix}/img/profile.jpg`} width={250} height={250} quality={100} alt="about-photo" />
                                 </div>
                             </div>
                         </div>
@@ -81,7 +83,7 @@ export default function Home() {
                                     </p>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/js-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/js-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">JavaScript</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -90,7 +92,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/html5-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/html5-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">HTML 5</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -99,7 +101,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/css3-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/css3-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">CSS 3</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -108,7 +110,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/php-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/php-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">PHP</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -117,7 +119,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/python-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/python-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">Python</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -126,7 +128,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/amazondb-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/amazondb-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">SQL</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -153,7 +155,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/nodejs.jpg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/nodejs.jpg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">Node JS</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -167,7 +169,7 @@ export default function Home() {
                                     </p>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/react-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/react-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">React</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -176,7 +178,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/jquery-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/jquery-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">JQuery</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -185,7 +187,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/nextjs-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/nextjs-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">Next.js</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -194,7 +196,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/laravel-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/laravel-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">Laravel</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -203,7 +205,7 @@ export default function Home() {
                                     </div>
                                     <div className="mb-3">
                                         <label className="d-flex align-items-center mb-2">
-                                            <Image src="/img/mysql-logo.svg" width="30px" height="30px" alt="js-logo" quality={100} />
+                                            <Image src={`${prefix}/img/mysql-logo.svg`} width="30px" height="30px" alt="js-logo" quality={100} />
                                             <span className="ms-2">MySQL</span>
                                         </label>
                                         <div className="progress" style={{ height: '10px' }}>
@@ -266,7 +268,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/siukat.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/siukat.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
@@ -282,7 +284,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/aplikasi-ujian.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/aplikasi-ujian.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
@@ -298,7 +300,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/sisca.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/sisca.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
@@ -314,7 +316,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/multibank.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/multibank.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
@@ -330,7 +332,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/verif-akademik.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/verif-akademik.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
@@ -346,7 +348,7 @@ export default function Home() {
                                         <figure className="enlarge">
                                             <a href="#">
                                                 <div className="img-box">
-                                                    <Image src="/img/beasiswa-sfd.png" className="card-img-top" layout="fill" objectFit="cover" alt="..." />
+                                                    <Image src={`${prefix}/img/beasiswa-sfd.png`} className="card-img-top" layout="fill" objectFit="cover" alt="..." />
                                                 </div>
                                             </a>
                                             <div className="overlay-tool">
