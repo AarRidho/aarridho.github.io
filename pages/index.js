@@ -56,7 +56,7 @@ export default function Home() {
                                         </div>
                                         <div className="col-12 col-md-6">
                                             <ul className="list-group list-group-flush">
-                                                <li className="list-group-item"><strong>Age: </strong> 25</li>
+                                                <li className="list-group-item"><strong>Age: </strong> 24</li>
                                                 <li className="list-group-item"><strong>Degree: </strong> Bachelor</li>
                                             </ul>
                                         </div>
